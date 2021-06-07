@@ -14,6 +14,8 @@ class Card extends React.Component {
 
     return (
       <p className={styles.component}>{ReactHtmlParser(title)}</p>
+
+      
     );
   }
 }
