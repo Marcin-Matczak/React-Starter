@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Card.scss';
+import ReactHtmlParser from 'react-html-parser';
 
 class Card extends React.Component {
   static propTypes = {
@@ -8,8 +9,11 @@ class Card extends React.Component {
   }
 
   render() {
+
+    const {title} = this.props;
+
     return (
-      <p className={styles.component}>{this.props.title}</p>
+      <p className={styles.component}>{ReactHtmlParser(title)}</p>
     );
   }
 }
