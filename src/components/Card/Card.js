@@ -10,7 +10,7 @@ class Card extends React.Component {
   render() {
     return (
       <p className={styles.component}>{this.props.title}</p>
-    )
+    );
   }
 }
 
