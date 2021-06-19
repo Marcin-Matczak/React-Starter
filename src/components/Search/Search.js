@@ -12,13 +12,11 @@ class Search extends React.Component {
     text: PropTypes.string,
     searchString: PropTypes.string,
     changeSearchString: PropTypes.func,
-    countVisible: PropTypes.number,
-    countAll: PropTypes.number,
     history: PropTypes.object,
   }
 
   state = {
-    value: '',
+    value: this.props.searchString,
     visibleButtons: false,
   }
 
@@ -29,7 +27,7 @@ class Search extends React.Component {
     });
   }
 
-  handleOK(){
+  handleOK(){  
     this.props.history.push(`/search/${this.state.value}`);
   }
 

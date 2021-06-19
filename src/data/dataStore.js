@@ -126,12 +126,6 @@ const columns = [
     title: 'Games',
     icon: 'gamepad',
   },
-  {
-    id: 'column-4',
-    listId: 'list-2',
-    title: 'Strange column',
-    icon: 'question',
-  },
 ];
 
 const cards = [
